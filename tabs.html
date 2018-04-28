@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Tabs</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #5C258D;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4389A2, #5C258D);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family:  'Karla', sans-serif;
+
+        }
+
+        .tabs {
+            width: 600px;
+            height: 400px;
+            margin: 10% auto;
+        }
+
+        .tabs__header {
+            width: 100%;
+            height: 40px;
+            
+        }
+
+        .tabs__pestana {
+            width: 100px;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: rgba(64, 100, 219, 0.884);
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            font-size: .9em;
+        }
+
+
+        .tabs__pestana:hover {
+            cursor: pointer;
+            background-color: rgba(40, 83, 224, 0.795);
+        }
+
+        .tabs__body {
+            height: 100%;
+            padding: 10px;
+            /* background: #000;; */
+            background-color: white;
+            line-height: 1.8;
+            font-size: .8em;
+            overflow: scroll;
+
+        }
+
+
+        .show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .active {
+            background-color: rgba(21, 58, 182, 0.795);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tabs__header" id="tabs_container">
+            <div class="tabs__pestana active" data-tab=1>
+                Pestaña #1
+            </div>
+            <div class="tabs__pestana" data-tab=2>
+                Pestaña #2
+            </div>
+            <div class="tabs__pestana" data-tab=3>
+                Pestaña #3
+            </div>
+            <div class="tabs__pestana" data-tab=4>
+                Pestaña #4
+            </div>
+            <div class="tabs__pestana" data-tab=5>
+                    Pestaña #5
+            </div>
+        </div>
+        <div class="tabs__body ">
+            <div class="tab__info  " id="1">
+                <h1>Header del primer tab</h1>
+                <h2>Subtitulos del primer tab</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos beatae libero ducimus provident neque
+                    exercitationem ipsum eos dolor, deserunt magnam, rerum illo quod aut recusandae quibusdam. Adipisci similique,
+                    cum modi fugiat laborum id sint debitis non. Blanditiis quas eaque alias obcaecati nemo nobis quidem
+                    a dolor nihil, suscipit rem cupiditate tenetur reprehenderit saepe nam molestiae incidunt in iure, asperiores
+                    ex nulla non voluptates! Eveniet perspiciatis ullam ex autem cupiditate ipsum mollitia modi illum. Voluptatum
+                    repellat voluptates, quis id ullam eius ipsum labore dolores iste tenetur animi voluptatibus pariatur,
+                    enim exercitationem aperiam illo officiis sit fugit culpa corrupti quibusdam itaque commodi.</p>
+                
+                <h2>Subtitulos del primer tab</h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos beatae libero ducimus provident neque
+                 exercitationem ipsum eos dolor, deserunt magnam, rerum illo quod aut recusandae quibusdam. Adipisci similique,
+                 cum modi fugiat laborum id sint debitis non. Blanditiis quas eaque alias obcaecati nemo nobis quidem
+                 a dolor nihil, suscipit rem cupiditate tenetur reprehenderit saepe nam molestiae incidunt in iure, asperiores
+                 ex nulla non voluptates! Eveniet perspiciatis ullam ex autem cupiditate ipsum mollitia modi illum. Voluptatum
+                 repellat voluptates, quis id ullam eius ipsum labore dolores iste tenetur animi voluptatibus pariatur,
+                 enim exercitationem aperiam illo officiis sit fugit culpa corrupti quibusdam itaque commodi.</p>    
+            </div>
+            <div class="tab__info hide" id="2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minus amet laboriosam inventore! Quas, possimus
+                    quidem! Animi dicta velit error dolores! Consectetur, quisquam sed est fugiat, enim voluptates non magni
+                    velit debitis accusamus odio? Voluptas, molestias qui rem harum repellendus architecto! Voluptatum inventore
+                    rerum, iure saepe veniam sint eos amet cupiditate at voluptatibus officia placeat nemo omnis voluptatem
+                    vel odio veritatis sit. Quis, reprehenderit illo. Ducimus odio ad illum sunt illo, quos iusto deserunt
+                    labore explicabo deleniti, harum velit magni aperiam sequi neque praesentium corrupti veritatis blanditiis
+                    perspiciatis. Similique necessitatibus modi corrupti provident voluptatum, voluptatibus obcaecati rem
+                    rerum iste aspernatur cumque nostrum labore laboriosam beatae? Neque autem beatae tempora modi quod laborum
+                    itaque ex culpa sequi enim aspernatur, iure id ut quas quibusdam harum saepe ad odit laudantium incidunt
+                    earum. Libero aliquid recusandae animi, distinctio ad quaerat at vel totam officia debitis a provident
+                    consequuntur ipsum corporis ea commodi quisquam dolores eligendi magnam quia deleniti tenetur eaque minima!
+                    Harum neque rerum aperiam temporibus magnam omnis cum perferendis, tempore optio non numquam quisquam
+                    soluta ea doloribus hic ut repudiandae quo recusandae assumenda cumque. Non inventore nesciunt aperiam
+                    vel vero qui voluptatibus necessitatibus rem beatae laboriosam. Quia voluptates ipsum repudiandae porro
+                    eius?
+                </p>
+            </div>
+            <div class="tab__info hide" id="3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, voluptas provident! Sunt repellendus
+                    accusamus amet pariatur? Corporis culpa aperiam deserunt omnis natus suscipit quam fugiat autem, harum
+                    ipsum, quia dolorem temporibus? Accusamus suscipit atque quo rem recusandae dolore sequi consequuntur
+                    aliquam voluptates, enim doloribus inventore est tempora nihil in ipsa fuga qui debitis nisi aliquid
+                    eaque. Cumque odit, veritatis dolores a ratione iure eum quam iste. Numquam a, illo facilis adipisci
+                    recusandae natus qui dignissimos veniam molestiae similique.</p>
+            </div>
+            <div class="tab__info hide" id="4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus.</p>
+                <img src="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg" alt="">
+            </div>
+            <div class="tab__info hide" id="5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus.</p>
+                <img src="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <a> subir</a>
+
+    <script>    
+
+        (function () {
+            var tabs = document.getElementById('tabs_container');
+            var tabsinfo = document.getElementsByClassName('tab__info');
+            var tabList = Array.prototype.slice.call(tabs.children);
+
+            var handleTab = function (click) {
+                var clickedElement = click.target;
+
+                if (clickedElement.nodeName == "DIV" && clickedElement.classList.contains('tabs__pestana')) {
+
+                    tabList.forEach(tab => {
+                        if (tab.dataset.tab != clickedElement.dataset.tab) {
+                            tab.classList.remove('active');
+                            tabsinfo[tab.dataset.tab - 1].classList.add('hide');
+                        }
+                    });
+
+                    clickedElement.classList.add('active');
+                    tabsinfo[clickedElement.dataset.tab - 1].classList.remove('hide');
+                }
+            }
+
+            tabs.addEventListener('click', handleTab)
+        })()
+
+    </script>
+</body>
+
+</html>
